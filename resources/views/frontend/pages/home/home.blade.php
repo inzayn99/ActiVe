@@ -441,31 +441,31 @@
                             <!-- Category item -->
                             <div class="text-center mb-3 card-bg-scale position-relative overflow-hidden rounded bg-dark-overlay-4 " style="background-image:url('frontend/assets/images/blog/4by3/01.jpg'); background-position: center left; background-size: cover;">
                                 <div class="p-3">
-                                    <a href="index.html#" class="stretched-link btn-link fw-bold text-white h5">Travel</a>
+                                    <a href="index.html#" class="stretched-link btn-link fw-bold text-white h5">Politics</a>
                                 </div>
                             </div>
                             <!-- Category item -->
                             <div class="text-center mb-3 card-bg-scale position-relative overflow-hidden rounded" style="background-image:url('frontend/assets/images/blog/4by3/02.jpg'); background-position: center left; background-size: cover;">
                                 <div class="bg-dark-overlay-4 p-3">
-                                    <a href="index.html#" class="stretched-link btn-link fw-bold text-white h5">Business</a>
+                                    <a href="index.html#" class="stretched-link btn-link fw-bold text-white h5">Travel</a>
                                 </div>
                             </div>
                             <!-- Category item -->
                             <div class="text-center mb-3 card-bg-scale position-relative overflow-hidden rounded" style="background-image:url('frontend/assets/images/blog/4by3/03.jpg'); background-position: center left; background-size: cover;">
                                 <div class="bg-dark-overlay-4 p-3">
-                                    <a href="index.html#" class="stretched-link btn-link fw-bold text-white h5">Marketing</a>
+                                    <a href="index.html#" class="stretched-link btn-link fw-bold text-white h5">People</a>
                                 </div>
                             </div>
                             <!-- Category item -->
                             <div class="text-center mb-3 card-bg-scale position-relative overflow-hidden rounded" style="background-image:url('frontend/assets/images/blog/4by3/04.jpg'); background-position: center left; background-size: cover;">
                                 <div class="bg-dark-overlay-4 p-3">
-                                    <a href="index.html#" class="stretched-link btn-link fw-bold text-white h5">Photography</a>
+                                    <a href="index.html#" class="stretched-link btn-link fw-bold text-white h5">Valley</a>
                                 </div>
                             </div>
                             <!-- Category item -->
                             <div class="text-center mb-3 card-bg-scale position-relative overflow-hidden rounded" style="background-image:url('frontend/assets/images/blog/4by3/05.jpg'); background-position: center left; background-size: cover;">
                                 <div class="bg-dark-overlay-4 p-3">
-                                    <a href="index.html#" class="stretched-link btn-link fw-bold text-white h5">Sports</a>
+                                    <a href="index.html#" class="stretched-link btn-link fw-bold text-white h5">Advanture</a>
                                 </div>
                             </div>
                             <!-- View All Category button -->
@@ -710,12 +710,12 @@
                                         </div>
                                         <!-- Card overlay bottom -->
                                         <div class="w-100 mt-auto">
-                                            <a href="index.html#" class="badge bg-primary mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Photography</a>
+                                            <a href="index.html#" class="badge bg-primary mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Vaccine</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body px-0 pt-3">
-                                    <h5 class="card-title"><a href="post-single-3.html" class="btn-link text-reset fw-bold">This is why this year will be the year of startups</a></h5>
+                                    <h5 class="card-title"><a href="post-single-3.html" class="btn-link text-reset fw-bold">Nepal to receive direct vaccine donation from US</a></h5>
                                     <!-- Card info -->
                                     <ul class="nav nav-divider align-items-center d-none d-sm-inline-block">
                                         <li class="nav-item">

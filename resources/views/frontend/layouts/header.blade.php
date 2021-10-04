@@ -94,7 +94,7 @@ Header START -->
                         <a class="nav-link ps-0" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Forum</a>
+                        <a class="nav-link" href="#">National</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Login / Join</a>
@@ -303,10 +303,9 @@ Header START -->
                                     <!-- Card item START -->
                                     <div class="col-sm-6 col-lg-3">
                                         <div class="bg-primary-soft p-4 text-center h-100 w-100 rounded">
-                                            <span>The active</span>
-                                            <h3>Premium Membership</h3>
-                                            <p>Become a Member Today!</p>
-                                            <a href="#" class="btn btn-warning">View pricing plans</a>
+                                            <h3>ACTIVE NEWS</h3>
+                                            <p>Find the latest breaking news from Nepal, opinion & analysis on Nepali politics, business, culture & arts, sports..</p>
+                                            <a href="#" class="btn btn-warning">follow us</a>
                                         </div>
                                     </div>
                                     <!-- Card item END -->
@@ -317,14 +316,19 @@ Header START -->
                                         <ul class="list-inline mt-3">
                                             <li class="list-inline-item">Trending tags:</li>
                                             <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Travel</a></li>
-                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Business</a></li>
-                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Tech</a></li>
-                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Gadgets</a></li>
+                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">National</a></li>
+                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Technology</a></li>
                                             <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Lifestyle</a></li>
                                             <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Vaccine</a></li>
                                             <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Sports</a></li>
                                             <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Covid-19</a></li>
                                             <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Politics</a></li>
+                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Advanture</a></li>
+                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">valley</a></li>
+                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">E-paper</a></li>
+
+
+
                                         </ul>
                                     </div>
                                 </div> <!-- Row END -->
