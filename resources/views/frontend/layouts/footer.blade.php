@@ -49,7 +49,7 @@ Footer START -->
                             <li class="nav-item">{{date('D M Y')}}</li>
                         </ul>
                     </div>
-                                    </div>
+                </div>
 
                 <!-- Footer Widget -->
                 <div class="col-md-6 col-lg-3 mb-4">
@@ -69,7 +69,6 @@ Footer START -->
                                 <li class="nav-item"><a class="nav-link pt-0" href="index.html#">National</a></li>
                                 <li class="nav-item"><a class="nav-link" href="index.html#">Politics </a></li>
                                 <li class="nav-item"><a class="nav-link" href="index.html#">Valley</a></li>
-                                <li class="nav-item"><a class="nav-link" href="index.html#">Sport</a></li>
                                 <li class="nav-item"><a class="nav-link" href="index.html#">Travel</a></li>
                                 <li class="nav-item"><a class="nav-link" href="index.html#">Technology</a></li>
                             </ul>
@@ -183,5 +182,6 @@ Footer START -->
 
     </body>
     </html>
+
 
 @endsection
