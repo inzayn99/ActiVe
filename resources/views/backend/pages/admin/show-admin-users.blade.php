@@ -19,7 +19,7 @@
                         <div class="card-body">
                             <h4 class="card-title">SHOW USERS</h4>
                             <p class="card-description">
-                                Welcome To Show users page.<code>{{date('D M y')}}</code>
+                                @include('backend.layouts.message')<code>{{date('D M y')}}</code>
                             </p>
                             <div class="table-responsive">
                                 <table class="table table-striped">
