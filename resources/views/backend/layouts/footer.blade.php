@@ -26,6 +26,7 @@
     <script src="{{url('backend/vendors/datatables.net-bs4/dataTables.bootstrap4.js')}}"></script>
     <script src="{{url('backend/js/dataTables.select.min.js')}}"></script>
 
+
     <!-- End plugin js for this page -->
     <!-- inject:js -->
     <script src="{{url('backend/js/off-canvas.js')}}"></script>
@@ -33,6 +34,10 @@
     <script src="{{url('backend/js/template.js')}}"></script>
     <script src="{{url('backend/js/settings.js')}}"></script>
     <script src="{{url('backend/js/todolist.js')}}"></script>
+    <script src="{{url('backend/js/file-upload.js')}}"></script>
+
+
+
     <!-- endinject -->
     <!-- Custom js for this page-->
     <script src="{{url('backend/js/dashboard.js')}}"></script>
