@@ -66,7 +66,22 @@ class AdminUserController extends BackendController
             return redirect()->back();
         }
         if ($request->isMethod('post')) {
-            dd($request->all());
+            $criteria = $request->criteria;
+            $findUser = AdminUser::findOrFail($criteria);
+
+            if (isset($_POST['active'])) {
+                $findUser->status = 0;
+                $message = "Status was inactive";
+
+            }
+            if (isset($_POST['inactive'])) {
+                $findUser->status = 1;
+                $message = "Status was active";
+
+            }
+            if ($findUser->update()){
+                return redirect()->back()->with('success',$message);
+            }
         }
     }
 }

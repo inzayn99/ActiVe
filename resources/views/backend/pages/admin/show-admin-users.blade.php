@@ -53,9 +53,12 @@
                                                 <td>{{$users->email}}</td>
                                                 <td>
                                                     @if($users->admin_type=='super-admin')
-                                                        <button title="Super admin" class="btn btn-success btn-sm">Super admin</button>
+                                                        <button title="Super admin" class="btn btn-success btn-sm">Super
+                                                            admin
+                                                        </button>
                                                     @else
-                                                        <button title="Admin" class="btn btn-primary btn-sm">admin</button>
+                                                        <button title="Admin" class="btn btn-primary btn-sm">admin
+                                                        </button>
                                                     @endif
 
                                                 </td>
@@ -66,15 +69,10 @@
                                                         {{csrf_field()}}
                                                         <input type="hidden" name="criteria" value="{{$users->id}}">
                                                     @if ($users->status==1)
-                                                        <button name="active" type="button" class="btn btn-outline-primary btn-xs">
-                                                            Active
-                                                        </button>
+                                                        <button name="active" class="btn btn-outline-primary btn-xs">Active</button>
                                                     @else
-                                                        <button name="inactive" type="button" class="btn btn-outline-danger btn-xs">
-                                                            Inactive
-                                                        </button>
-                                                    @endif
-                                                    </form>
+                                                            <button name="inactive" class="btn btn-outline-danger btn-xs">Inactive</button>                                                        @endif
+                                                        </form>
 
                                                 </td>
 

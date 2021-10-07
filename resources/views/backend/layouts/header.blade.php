@@ -128,7 +128,7 @@
                                 <div class="form-check">
                                     <label class="form-check-label">
                                         <input class="checkbox" type="checkbox">
-                                        Team review meeting at 3.00 PM
+                                        Best Advanture travel in Nepal
                                     </label>
                                 </div>
                                 <i class="remove ti-close"></i>
@@ -137,7 +137,7 @@
                                 <div class="form-check">
                                     <label class="form-check-label">
                                         <input class="checkbox" type="checkbox">
-                                        Prepare for presentation
+                                        Trandding News
                                     </label>
                                 </div>
                                 <i class="remove ti-close"></i>
@@ -146,20 +146,12 @@
                                 <div class="form-check">
                                     <label class="form-check-label">
                                         <input class="checkbox" type="checkbox">
-                                        Resolve all the low priority tickets due today
+                                        Kathmandu Valley Information
                                     </label>
                                 </div>
                                 <i class="remove ti-close"></i>
                             </li>
-                            <li class="completed">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="checkbox" type="checkbox" checked>
-                                        Schedule meeting for next week
-                                    </label>
-                                </div>
-                                <i class="remove ti-close"></i>
-                            </li>
+
                             <li class="completed">
                                 <div class="form-check">
                                     <label class="form-check-label">
@@ -171,15 +163,13 @@
                             </li>
                         </ul>
                     </div>
-                    <h4 class="px-3 text-muted mt-5 font-weight-light mb-0">Events</h4>
+                    <h4 class="px-3 text-muted mt-5 font-weight-light mb-0">{{$title}}</h4>
 
                     <div class="events pt-4 px-3">
                         <div class="wrapper d-flex mb-2">
                             <i class="ti-control-record text-primary mr-2"></i>
                             <span>{{date('D | M | Y')}}</span>
                         </div>
-                        <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
-                        <p class="text-gray mb-0 ">Call Sarah Graves</p>
                     </div>
                 </div>
 
