@@ -10,6 +10,8 @@ class AdminUserController extends BackendController
 {
     public function index()
     {
+        $userData = AdminUser::orderBy('id', 'desc')->get();
+        $this->data('userData', $userData);
         return view($this->pagePath . '.admin.show-admin-users', $this->data);
 
     }
@@ -50,11 +52,21 @@ class AdminUserController extends BackendController
             }
 
             if (AdminUser::create($data)) {
-                return redirect()->route('admin-users')->with('success', 'Data was inserted');
-            }else{
+                return redirect()->route('admin-users')->with('success', 'Data was successfully inserted');
+            } else {
                 return redirect()->back()->with('error', 'Data was not inserted');
 
             }
+        }
+    }
+
+    public function updateStatus(Request $request)
+    {
+        if ($request->isMethod('get')) {
+            return redirect()->back();
+        }
+        if ($request->isMethod('post')) {
+            dd($request->all());
         }
     }
 }

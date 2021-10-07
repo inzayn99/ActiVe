@@ -17,69 +17,78 @@
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">SHOW USERS</h4>
-                            <p class="card-description">
-                                @include('backend.layouts.message')<code>{{date('D M y')}}</code>
-                            </p>
-                            <div class="table-responsive">
-                                <table class="table table-striped">
-                                    <thead>
-                                    <tr>
-                                        <th>
-                                            S.N
-                                        </th>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            UserName
-                                        </th>
-                                        <th>
-                                            Email
-                                        </th>
-                                        <th>
-                                            User Types
-                                        </th>
-                                        <th>
-                                            Status
-                                        </th>
-                                        <th>
-                                            Images
-                                        </th>
-                                        <th>
-                                            Action
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <td>
-                                        01.
-                                    </td>
-                                    <td>
-                                        Herman Beck
-                                    </td>
-                                    <td>
-                                        $ 77.99
-                                    </td>
-                                    <td>
-                                        $ 77.99
-                                    </td>
-                                    <td>
-                                        $ 77.99
-                                    </td>
-                                    <td>
-                                        $ 77.99
-                                    </td>
-                                    <td class="py-1">
-                                        <img src="../../images/faces/face1.jpg" alt="image"/>
-                                    </td>
-                                    <td>
-                                        May 15, 2015
-                                    </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            <h4 class="font-weight-light d-block"><i class="ti-user"></i> SHOW USERS
+
+
+                                <a href="{{route('add-admin-user')}}">
+                                    <button class="btn btn-outline-primary btn-sm">Add new user
+                                        {{--                                    <span class="d-inline-block text-left">Add new user</span>--}}
+                                    </button>
+                                </a>
+
+
+                                <p class="card-description">
+                                    @include('backend.layouts.message')
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>S.N</th>
+                                            <th>Name</th>
+                                            <th>UserName</th>
+                                            <th>Email</th>
+                                            <th>User Types</th>
+                                            <th>Status</th>
+                                            <th>Images</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        @foreach($userData as $key=>$users)
+                                            <tr>
+                                                <td>{{++$key}}</td>
+                                                <td>{{$users->name}}</td>
+                                                <td>{{$users->username}}</td>
+                                                <td>{{$users->email}}</td>
+                                                <td>
+                                                    @if($users->admin_type=='super-admin')
+                                                        <button title="Super admin" class="btn btn-success btn-sm">Super admin</button>
+                                                    @else
+                                                        <button title="Admin" class="btn btn-primary btn-sm">admin</button>
+                                                    @endif
+
+                                                </td>
+
+
+                                                <td>
+                                                    <form action="{{route('update-admin-status')}}" method="post">
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="criteria" value="{{$users->id}}">
+                                                    @if ($users->status==1)
+                                                        <button name="active" type="button" class="btn btn-outline-primary btn-xs">
+                                                            Active
+                                                        </button>
+                                                    @else
+                                                        <button name="inactive" type="button" class="btn btn-outline-danger btn-xs">
+                                                            Inactive
+                                                        </button>
+                                                    @endif
+                                                    </form>
+
+                                                </td>
+
+                                                <td class="py-1"><img src="{{url('uploads/admins/'.$users->image)}}"
+                                                                      alt=""></td>
+                                                <td>
+                                                    <a href="" class="btn btn-outline-primary btn-xs">Edit</a>
+                                                    <a href="" class="btn btn-outline-primary btn-xs">Delete</a>
+                                                </td>
+                                            </tr>
+                                        @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
                         </div>
                     </div>
                 </div>

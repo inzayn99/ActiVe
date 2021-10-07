@@ -42,6 +42,9 @@
     <!-- Custom js for this page-->
     <script src="{{url('backend/js/dashboard.js')}}"></script>
     <script src="{{url('backend/js/Chart.roundedBarCharts.js')}}"></script>
+    <script src="{{url('backend/custom/custom.js')}}"></script>
+
+
     <!-- End custom js for this page-->
     </body>
 

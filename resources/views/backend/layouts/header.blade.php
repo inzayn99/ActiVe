@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="{{url('backend/css/vertical-layout-light/style.css')}}">
     <!-- endinject -->
     <link rel="shortcut icon" href="{{url('backend/images/favicon.png')}}" />
+
+    <!-- fontawesome -->
+
 </head>
 <body>
 <div class="container-scroller">

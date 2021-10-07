@@ -16,9 +16,9 @@
                 <div class="col-12 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">ADD USER</h4>
+                            <h4 class="font-weight-light d-block">ADD USER</h4>
                             <p class="card-description">
-                                @include('backend.layouts.message')<code>{{date('D M y')}}</code>
+                                @include('backend.layouts.message')
                             </p>
 
 
