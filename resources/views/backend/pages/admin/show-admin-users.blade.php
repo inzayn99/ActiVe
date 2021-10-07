@@ -52,14 +52,21 @@
                                                 <td>{{$users->username}}</td>
                                                 <td>{{$users->email}}</td>
                                                 <td>
-                                                    @if($users->admin_type=='super-admin')
-                                                        <button title="Super admin" class="btn btn-success btn-sm">Super
-                                                            admin
-                                                        </button>
-                                                    @else
-                                                        <button title="Admin" class="btn btn-primary btn-sm">admin
-                                                        </button>
-                                                    @endif
+                                                    <form action="{{route('update-admin-type')}}" method="post">
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="criteria" value="{{$users->id}}">
+                                                        @if($users->admin_type=='super-admin')
+                                                            <button name="super_admin" title="Super admin"
+                                                                    class="btn btn-success btn-sm">
+                                                                Super
+                                                                admin
+                                                            </button>
+                                                        @else
+                                                            <button name="admin" title="Admin"
+                                                                    class="btn btn-primary btn-sm">admin
+                                                            </button>
+                                                        @endif
+                                                    </form>
 
                                                 </td>
 
@@ -68,11 +75,15 @@
                                                     <form action="{{route('update-admin-status')}}" method="post">
                                                         {{csrf_field()}}
                                                         <input type="hidden" name="criteria" value="{{$users->id}}">
-                                                    @if ($users->status==1)
-                                                        <button name="active" class="btn btn-outline-primary btn-xs">Active</button>
-                                                    @else
-                                                            <button name="inactive" class="btn btn-outline-danger btn-xs">Inactive</button>                                                        @endif
-                                                        </form>
+                                                        @if ($users->status==1)
+                                                            <button name="active"
+                                                                    class="btn btn-outline-primary btn-xs">Active
+                                                            </button>
+                                                        @else
+                                                            <button name="inactive"
+                                                                    class="btn btn-outline-danger btn-xs">Inactive
+                                                            </button>                                                        @endif
+                                                    </form>
 
                                                 </td>
 
@@ -80,7 +91,7 @@
                                                                       alt=""></td>
                                                 <td>
                                                     <a href="" class="btn btn-outline-primary btn-xs">Edit</a>
-                                                    <a href="" class="btn btn-outline-primary btn-xs">Delete</a>
+                                                    <a href="{{route('delete-admin-user').'/'.$users->id}}" class="btn btn-outline-primary btn-xs">Delete</a>
                                                 </td>
                                             </tr>
                                         @endforeach

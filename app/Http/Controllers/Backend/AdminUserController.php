@@ -60,6 +60,7 @@ class AdminUserController extends BackendController
         }
     }
 
+//------------Status----------------//
     public function updateStatus(Request $request)
     {
         if ($request->isMethod('get')) {
@@ -79,9 +80,64 @@ class AdminUserController extends BackendController
                 $message = "Status was active";
 
             }
-            if ($findUser->update()){
-                return redirect()->back()->with('success',$message);
+            if ($findUser->update()) {
+                return redirect()->back()->with('success', $message);
             }
         }
     }
+    //-----------------end status-----------------------//
+
+
+//----------------UserType--------------//
+    public function updateAdminType(Request $request)
+    {
+        if ($request->isMethod('get')) {
+            return redirect()->back();
+        }
+        if ($request->isMethod('post')) {
+            $criteria = $request->criteria;
+            $findUser = AdminUser::findOrFail($criteria);
+
+            if (isset($_POST['super_admin'])) {
+                $findUser->admin_type = 'admin';
+                $message = "Super Admin Type was changed";
+
+            }
+            if (isset($_POST['admin'])) {
+                $findUser->admin_type = 'super-admin';
+                $message = "Admin Type was changed";
+
+            }
+            if ($findUser->update()) {
+                return redirect()->back()->with('success', $message);
+            }
+        }
+    }
+
+    //-----------End User Type----------------//
+
+    //----------Img Delete-------------//
+    function deleteFiles($id)
+    {
+        $finedData = AdminUser::findOrFail($id);
+        $fileName = $finedData->image;
+        $filePath = public_path('uploads/admins/' . $fileName);
+
+        if (file_exists($filePath) && is_file($filePath)) {
+            return unlink($filePath);
+        }
+        return true;
+    }
+
+//----------------------end img Delete----------//
+
+    public function delete(Request $request)
+    {
+        $id = $request->criteria;
+        $this->deleteFiles($id);
+        if ($this->deleteFiles($id) && AdminUser::findOrFail($id)->delete()){
+            return redirect()->back()->with('success','Data was deleted');
+        }
+    }
+
 }
