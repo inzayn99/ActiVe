@@ -17,11 +17,11 @@
                 <div class="col-md-12">
                     <form action="">
                         <div class="row">
-                            <div class="col-md-10">
-                                <input type="text" name="search_admin_users" class="form-control">
+                            <div class="col-md-4">
+                                <input type="text" name="search_admin_users" class="form-control" placeholder="type something">
                             </div>
                             <div class="col-md-2">
-                                <button class="btn btn-outline-primary">Search</button>
+                                <button class="btn btn-outline-secondary btn-rounded btn-icon"><i class="ti-search"></i></button>
                             </div>
                         </div>
 
