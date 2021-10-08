@@ -13,7 +13,23 @@
     <div class="main-panel">
         <div class="content-wrapper">
             <div class="row">
+{{------------search-------------}}
+                <div class="col-md-12">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input type="text" name="search_admin_users" class="form-control">
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn btn-outline-primary">Search</button>
+                            </div>
+                        </div>
 
+
+                    </form>
+                </div>
+                <br><br><br>
+{{------------------end search--}}
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
@@ -90,7 +106,9 @@
                                                 <td class="py-1"><img src="{{url('uploads/admins/'.$users->image)}}"
                                                                       alt=""></td>
                                                 <td>
-                                                    <a href="" class="btn btn-outline-primary btn-xs">Edit</a>
+                                                    <a href="{{route('edit-admin-user').'/'.$users->id}}" class="btn btn-outline-primary btn-xs">Edit</a>
+
+
                                                     <a href="{{route('delete-admin-user').'/'.$users->id}}" class="btn btn-outline-primary btn-xs">Delete</a>
                                                 </td>
                                             </tr>
