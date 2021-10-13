@@ -13,7 +13,6 @@ class AdminUserTableSeeder extends Seeder
     public function run()
     {
         AdminUser::create([
-
             'name' => 'admin',
             'username' => 'admin',
             'email' => 'admin@gmail.com',
@@ -21,6 +20,7 @@ class AdminUserTableSeeder extends Seeder
             'image' => '',
             'status' => 1,
             'admin_type'=>'super-admin'
+
         ]);
     }
 }

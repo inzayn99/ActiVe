@@ -18,7 +18,8 @@ class UserTableSeeder extends Seeder
             'email' => 'user@gmail.com',
             'password' => bcrypt('user002'),
             'image' => '',
-            'status' => 1,
+            'status' => 1
+
         ]);
     }
 }

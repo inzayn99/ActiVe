@@ -220,8 +220,16 @@ class AdminUserController extends BackendController
 
         }
         if ($request->isMethod('post')) {
-           dd($request->all());
+            $username = $request->username;
+            $password = $request->password;
 
+            if (Auth::guard('admin')->attempt(['username' => $username, 'password' => $password])) {
+
+                return redirect()->intended(route('admin'));
+
+            } else {
+                echo "username and password not match";
+            }
 
         }
     }
