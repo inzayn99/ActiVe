@@ -32,6 +32,7 @@
                         </div>
                         <h4>Hello! let's get started to Dashboard</h4>
                         <h6 class="font-weight-light">Sign in to continue.</h6>
+                        @include('backend.layouts.message')
                         <form class="pt-3" action="{{route('admin-login')}}" method="post">
                             {{csrf_field()}}
                             <div class="form-group">

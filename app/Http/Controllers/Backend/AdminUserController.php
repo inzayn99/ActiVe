@@ -228,7 +228,7 @@ class AdminUserController extends BackendController
                 return redirect()->intended(route('admin'));
 
             } else {
-                echo "username and password not match";
+                return redirect()->back()->with('error', 'Username & password not match');
             }
 
         }
