@@ -96,9 +96,12 @@ Header START -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">National</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login / Join</a>
-                    </li>
+                    @if(Auth::guard('web')->user())
+                        <li class="nav-item"><a class="nav-link" href="{{route('logout')}}">Logout</a></li>
+                    @else
+
+                        <li class="nav-item"><a class="nav-link" href="{{route('login')}}">Login</a></li>
+                        @endif
                 </ul>
                 <!-- Top bar right -->
                 <div class="d-flex align-items-center">
