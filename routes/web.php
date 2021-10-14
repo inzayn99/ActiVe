@@ -4,6 +4,12 @@ Route::group(['namespace' => 'Frontend'], function () {
     Route::any('/', 'ApplicationController@index')->name('index');
     Route::any('/contact', 'ApplicationController@contact')->name('contact');
 
+
+    Route::any('login', 'ApplicationController@login')->name('login');
+
+    Route::group(['prefix' => 'users'], function () {
+        Route::any('/', 'ApplicationController@user')->name('users');
+    });
 });
 
 Route::group(['namespace' => 'Backend'], function () {
@@ -11,7 +17,7 @@ Route::group(['namespace' => 'Backend'], function () {
 });
 
 
-Route::group(['namespace' => 'Backend', 'prefix' => 'admin'], function () {
+Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::any('/', 'DashboardController@index')->name('admin');
 
 
@@ -27,4 +33,6 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin'], function () {
 
     });
 
+
+    Route::any('admin-logout', "AdminUserController@logout")->name('admin-logout');
 });

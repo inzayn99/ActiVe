@@ -32,7 +32,7 @@
                     <div class="col-md-6 grid-margin stretch-card">
                         <div class="card tale-bg">
                             <div class="card-people mt-auto">
-                                <img src="{{url('backend/images/dashboard/111.png')}}" alt="people">
+                                <img src="{{url('uploads/admins/'.Auth::guard('admin')->user()->image)}}" alt="people">
                                 <div class="weather-info">
                                     <div class="d-flex">
                                         <div>
