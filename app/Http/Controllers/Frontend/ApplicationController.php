@@ -50,4 +50,8 @@ public function user(Request $request)
     return view($this->frontendPath . 'users.index',$this->data);
 }
 
+public function logout(){
+        Auth::guard('web')->logout();
+        return redirect()->intended(route('login'));
+}
 }

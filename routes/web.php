@@ -7,8 +7,9 @@ Route::group(['namespace' => 'Frontend'], function () {
 
     Route::any('login', 'ApplicationController@login')->name('login');
 
-    Route::group(['prefix' => 'users'], function () {
+    Route::group(['prefix' => 'users','middleware'=>'auth:web'], function () {
         Route::any('/', 'ApplicationController@user')->name('users');
+        Route::any('/logout', 'ApplicationController@logout')->name('logout');
     });
 });
 
@@ -17,7 +18,7 @@ Route::group(['namespace' => 'Backend'], function () {
 });
 
 
-Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'middleware' => 'auth'], function () {
+Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
     Route::any('/', 'DashboardController@index')->name('admin');
 
 
