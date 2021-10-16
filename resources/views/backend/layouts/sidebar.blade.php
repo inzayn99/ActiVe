@@ -24,15 +24,15 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
-                    <i class="icon-ban menu-icon"></i>
+                <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                    <i class="icon-head menu-icon"></i>
                     <span class="menu-title">Category</span>
                     <i class="menu-arrow"></i>
                 </a>
-                <div class="collapse" id="error">
+                <div class="collapse" id="auth">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"> <a class="nav-link" href=""> Add Category </a></li>
-                        <li class="nav-item"> <a class="nav-link" href=""> Show category </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{route('add-category')}}"> Add Category </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{route('category')}}"> Show Category </a></li>
                     </ul>
                 </div>
             </li>
