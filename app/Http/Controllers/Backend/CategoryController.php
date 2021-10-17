@@ -11,13 +11,19 @@ class CategoryController extends BackendController
     public function index()
     {
 
-        $this->data('categoryData',Category::orderBy('id','desc')->get());
-        return view($this->pagePath.'.category.show-category',$this->data);
+        $this->data('categoryData', Category::orderBy('id', 'desc')->get());
+        return view($this->pagePath . '.category.show-category', $this->data);
 
     }
 
     public function add(Request $request)
     {
+        if ($request->isMethod('get')) {
+            return view($this->pagePath . '.category.add-category', $this->data);
 
+        }
+        if ($request->isMethod('post')) {
+
+        }
     }
 }

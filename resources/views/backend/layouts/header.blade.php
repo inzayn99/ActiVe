@@ -23,6 +23,12 @@
     <!-- endinject -->
     <link rel="shortcut icon" href="{{url('backend/images/favicon.png')}}" />
 
+    <!-- Tag-input -->
+{{--    <link rel="stylesheet" href="{{url('backend/tag-input/bootstrap-tagsinput.css')}}">--}}
+{{--    <link rel="stylesheet" href="{{url('backend/ckeditor/contents.css')}}">--}}
+    <link rel="stylesheet" href="{{url('backend/tag-input/bootstrap-tagsinput.css')}}">
+
+
     <!-- fontawesome -->
 
 </head>

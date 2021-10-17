@@ -45,6 +45,12 @@
     <script src="{{url('backend/custom/custom.js')}}"></script>
 
 
+    <!-- Tag-input -->
+    <script src="{{url('backend/tag-input/bootstrap-tagsinput.js')}}"></script>
+
+    tags
+    <script src="{{url('backend/ckeditor/ckeditor.js')}}"></script>
+
     <!-- End custom js for this page-->
     </body>
 

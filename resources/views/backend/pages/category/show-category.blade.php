@@ -82,31 +82,18 @@
                                                     </form>
 
                                                 </td>
+                                                <td>{{$category->postedBy->username}}</td>
+                                                <td>{{$category->created_at->diffForHumans()}}</td>
+
+
+
 
 
                                                 <td>
-                                                    <form action="{{route('update-admin-status')}}" method="post">
-                                                        {{csrf_field()}}
-                                                        <input type="hidden" name="criteria" value="{{$category->id}}">
-                                                        @if ($category->status==1)
-                                                            <button name="active"
-                                                                    class="btn btn-outline-primary btn-xs">Active
-                                                            </button>
-                                                        @else
-                                                            <button name="inactive"
-                                                                    class="btn btn-outline-danger btn-xs">Inactive
-                                                            </button>                                                        @endif
-                                                    </form>
-
-                                                </td>
-
-                                                <td class="py-1"><img src="{{url('uploads/category/'.$category->image)}}"
-                                                                      alt=""></td>
-                                                <td>
-                                                    <a href="{{route('edit-category').'/'.$category->id}}" class="btn btn-outline-primary btn-xs">Edit</a>
+                                                    <a href="{{route('edit-category').'/'.$category->id}}" class="btn btn-warning btn-xs">Edit</a>
 
 
-                                                    <a href="{{route('delete-category').'/'.$category->id}}" class="btn btn-outline-primary btn-xs">Delete</a>
+                                                    <a href="{{route('delete-category').'/'.$category->id}}" class="btn btn-danger btn-xs">Delete</a>
                                                 </td>
                                             </tr>
                                         @endforeach
