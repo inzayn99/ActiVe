@@ -189,92 +189,91 @@ Header START -->
 
 
                             </li>
-                            {{--                    <!-- Nav item 5 Mega menu -->--}}
-                            {{--                    <li class="nav-item dropdown dropdown-fullwidth">--}}
-                            {{--                        <a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Lifestyle</a>--}}
-                            {{--                        <div class="dropdown-menu" aria-labelledby="megaMenu">--}}
-                            {{--                            <div class="container">--}}
-                            {{--                                <div class="row g-4 p-3 flex-fill">--}}
-                            {{--                                    <!-- Card item START -->--}}
-                            {{--                                    <div class="col-sm-6 col-lg-3">--}}
-                            {{--                                        <div class="card bg-transparent">--}}
-                            {{--                                            <!-- Card img -->--}}
-                            {{--                                            <img class="card-img rounded" src="{{url('frontend/assets/images/blog/16by9/small/01.jpg')}}" alt="Card image">--}}
-                            {{--                                            <div class="card-body px-0 pt-3">--}}
-                            {{--                                                <h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">7 common mistakes everyone makes while traveling</a></h6>--}}
-                            {{--                                                <!-- Card info -->--}}
-                            {{--                                                <ul class="nav nav-divider align-items-center text-uppercase small mt-2">--}}
-                            {{--                                                    <li class="nav-item">--}}
-                            {{--                                                        <a href="#" class="text-reset btn-link">Joan Wallace</a>--}}
-                            {{--                                                    </li>--}}
-                            {{--                                                    <li class="nav-item">Feb 18, 2021</li>--}}
-                            {{--                                                </ul>--}}
-                            {{--                                            </div>--}}
-                            {{--                                        </div>--}}
-                            {{--                                    </div>--}}
-                            {{--                                    <!-- Card item END -->--}}
-                            {{--                                    <!-- Card item START -->--}}
-                            {{--                                    <div class="col-sm-6 col-lg-3">--}}
-                            {{--                                        <div class="card bg-transparent">--}}
-                            {{--                                            <!-- Card img -->--}}
-                            {{--                                            <img class="card-img rounded" src="{{url('frontend/assets/images/blog/16by9/small/02.jpg')}}" alt="Card image">--}}
-                            {{--                                            <div class="card-body px-0 pt-3">--}}
-                            {{--                                                <h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">12 worst types of business accounts you follow on Twitter</a></h6>--}}
-                            {{--                                                <!-- Card info -->--}}
-                            {{--                                                <ul class="nav nav-divider align-items-center text-uppercase small mt-2">--}}
-                            {{--                                                    <li class="nav-item">--}}
-                            {{--                                                        <a href="#" class="text-reset btn-link">Lori Stevens</a>--}}
-                            {{--                                                    </li>--}}
-                            {{--                                                    <li class="nav-item">Jun 03, 2021</li>--}}
-                            {{--                                                </ul>--}}
-                            {{--                                            </div>--}}
-                            {{--                                        </div>--}}
-                            {{--                                    </div>--}}
-                            {{--                                    <!-- Card item END -->--}}
-                            {{--                                    <!-- Card item START -->--}}
-                            {{--                                    <div class="col-sm-6 col-lg-3">--}}
-                            {{--                                        <div class="card bg-transparent">--}}
-                            {{--                                            <!-- Card img -->--}}
-                            {{--                                            <img class="card-img rounded" src="{{url('frontend/assets/images/blog/16by9/small/03.jpg')}}" alt="Card image">--}}
-                            {{--                                            <div class="card-body px-0 pt-3">--}}
-                            {{--                                                <h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">Skills that you can learn from business</a></h6>--}}
-                            {{--                                                <!-- Card info -->--}}
-                            {{--                                                <ul class="nav nav-divider align-items-center text-uppercase small mt-2">--}}
-                            {{--                                                    <li class="nav-item">--}}
-                            {{--                                                        <a href="#" class="text-reset btn-link">Judy Nguyen</a>--}}
-                            {{--                                                    </li>--}}
-                            {{--                                                    <li class="nav-item">Sep 07, 2021</li>--}}
-                            {{--                                                </ul>--}}
-                            {{--                                            </div>--}}
-                            {{--                                        </div>--}}
-                            {{--                                    </div>--}}
-                            {{--                                    <!-- Card item END -->--}}
-                            {{--                                    <!-- Card item START -->--}}
-                            {{--                                    <div class="col-sm-6 col-lg-3">--}}
-                            {{--                                        <div class="bg-primary-soft p-4 text-center h-100 w-100 rounded">--}}
-                            {{--                                            <h3>ACTIVE NEWS</h3>--}}
-                            {{--                                            <p>Find the latest breaking news from Nepal, opinion & analysis on Nepali politics, business, culture & arts, sports..</p>--}}
-                            {{--                                            <a href="#" class="btn btn-warning">follow us</a>--}}
-                            {{--                                        </div>--}}
-                            {{--                                    </div>--}}
-                            {{--                                    <!-- Card item END -->--}}
-                            {{--                                </div> <!-- Row END -->--}}
-                            {{--                                <!-- Trending tags -->--}}
-                            {{--                                <div class="row px-3">--}}
-                            {{--                                    <div class="col-12">--}}
-                            {{--                                        <ul class="list-inline mt-3">--}}
-                            {{--                                            <li class="list-inline-item">Trending tags:</li>--}}
-                            {{--                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Travel</a></li>--}}
-                            {{--                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">National</a></li>--}}
-                            {{--                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Technology</a></li>--}}
-                            {{--                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Lifestyle</a></li>--}}
-                            {{--                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Vaccine</a></li>--}}
-                            {{--                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Sports</a></li>--}}
-                            {{--                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Covid-19</a></li>--}}
-                            {{--                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Politics</a></li>--}}
-                            {{--                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Advanture</a></li>--}}
-                            {{--                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">valley</a></li>--}}
-                            {{--                                            <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">E-paper</a></li>--}}
+                                                <!-- Nav item 5 Mega menu -->
+                                                <li class="nav-item dropdown dropdown-fullwidth">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Lifestyle</a>
+                                                    <div class="dropdown-menu" aria-labelledby="megaMenu">
+                                                        <div class="container">
+                                                            <div class="row g-4 p-3 flex-fill">
+                                                                <!-- Card item START -->
+                                                                <div class="col-sm-6 col-lg-3">
+                                                                    <div class="card bg-transparent">
+                                                                        <!-- Card img -->
+                                                                        <img class="card-img rounded" src="{{url('frontend/assets/images/blog/16by9/small/01.jpg')}}" alt="Card image">
+                                                                        <div class="card-body px-0 pt-3">
+                                                                            <h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">7 common mistakes everyone makes while traveling</a></h6>
+                                                                            <!-- Card info -->
+                                                                            <ul class="nav nav-divider align-items-center text-uppercase small mt-2">
+                                                                                <li class="nav-item">
+                                                                                    <a href="#" class="text-reset btn-link">Joan Wallace</a>
+                                                                                </li>
+                                                                                <li class="nav-item">Feb 18, 2021</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Card item END -->
+                                                                <!-- Card item START -->
+                                                                <div class="col-sm-6 col-lg-3">
+                                                                    <div class="card bg-transparent">
+                                                                        <!-- Card img -->
+                                                                        <img class="card-img rounded" src="{{url('frontend/assets/images/blog/16by9/small/02.jpg')}}" alt="Card image">
+                                                                        <div class="card-body px-0 pt-3">
+                                                                            <h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">12 worst types of business accounts you follow on Twitter</a></h6>
+                                                                            <!-- Card info -->
+                                                                            <ul class="nav nav-divider align-items-center text-uppercase small mt-2">
+                                                                                <li class="nav-item">
+                                                                                    <a href="#" class="text-reset btn-link">Lori Stevens</a>
+                                                                                </li>
+                                                                                <li class="nav-item">Jun 03, 2021</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Card item END -->
+                                                                <!-- Card item START -->
+                                                                <div class="col-sm-6 col-lg-3">
+                                                                    <div class="card bg-transparent">
+                                                                        <!-- Card img -->
+                                                                        <img class="card-img rounded" src="{{url('frontend/assets/images/blog/16by9/small/03.jpg')}}" alt="Card image">
+                                                                        <div class="card-body px-0 pt-3">
+                                                                            <h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">Skills that you can learn from business</a></h6>
+                                                                            <!-- Card info -->
+                                                                            <ul class="nav nav-divider align-items-center text-uppercase small mt-2">
+                                                                                <li class="nav-item">
+                                                                                    <a href="#" class="text-reset btn-link">Judy Nguyen</a>
+                                                                                </li>
+                                                                                <li class="nav-item">Sep 07, 2021</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Card item END -->
+                                                                <!-- Card item START -->
+                                                                <div class="col-sm-6 col-lg-3">
+                                                                    <div class="bg-primary-soft p-4 text-center h-100 w-100 rounded">
+                                                                        <h3>ACTIVE NEWS</h3>
+                                                                        <p>Find the latest breaking news from Nepal, opinion & analysis on Nepali politics, business, culture & arts, sports..</p>
+                                                                        <a href="#" class="btn btn-warning">follow us</a>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Card item END -->
+                                                            </div> <!-- Row END -->
+                                                            <!-- Trending tags -->
+                                                            <div class="row px-3">
+                                                                <div class="col-12">
+                                                                    <ul class="list-inline mt-3">
+                                                                        <li class="list-inline-item">Trending tags:</li>
+                                                                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Travel</a></li>
+                                                                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">National</a></li>
+                                                                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Technology</a></li>
+                                                                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Lifestyle</a></li>
+                                                                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Vaccine</a></li>
+                                                                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Sports</a></li>
+                                                                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Covid-19</a></li>
+                                                                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Politics</a></li>
+                                                                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Advanture</a></li>
+                                                                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">valley</a></li>
 
 
                 </ul>

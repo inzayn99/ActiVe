@@ -44,4 +44,11 @@ class CategoryController extends BackendController
 
         }
     }
+
+    public function edit($id)
+    {
+        $categoryData = Category::findOrFail($id);
+        $this->data('categoryData', $categoryData);
+        return view($this->pagePath . '.category.edit-category', $this->data);
+    }
 }
