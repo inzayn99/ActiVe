@@ -49,14 +49,14 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'middleware' => 'au
     });
 
     //subcategory//
-    Route::group(['prefix' => 'sub-category'],function(){
-        Route::any('/','SubCategoryController@index')->name('sub-category');
-        Route::any('/add-sub-category','SubCategoryController@add')->name('add-sub-category');
-        Route::any('update-sub-category-status','SubCategoryController@updateStatus')->name('update-sub-category-status');
-        Route::any('delete-sub-category/{criteria?}','SubCategoryController@delete')->name('delete-sub-category');
-        Route::any('edit-sub-category/{criteria?}','SubCategoryController@edit')->name('edit-sub-category');
-        Route::any('edit-sub-category-action','SubCategoryController@editAction')->name('edit-sub-category-action');
-    });
+//    Route::group(['prefix' => 'sub-category'],function(){
+//        Route::any('/','SubCategoryController@index')->name('sub-category');
+//        Route::any('/add-sub-category','SubCategoryController@add')->name('add-sub-category');
+//        Route::any('update-sub-category-status','SubCategoryController@updateStatus')->name('update-sub-category-status');
+//        Route::any('delete-sub-category/{criteria?}','SubCategoryController@delete')->name('delete-sub-category');
+//        Route::any('edit-sub-category/{criteria?}','SubCategoryController@edit')->name('edit-sub-category');
+//        Route::any('edit-sub-category-action','SubCategoryController@editAction')->name('edit-sub-category-action');
+//    });
 
     Route::any('admin-logout', "AdminUserController@logout")->name('admin-logout');
 });
