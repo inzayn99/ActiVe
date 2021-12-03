@@ -21,6 +21,7 @@ class CreateSubCategoriesTable extends Migration
             $table->string('meta_description')->nullable();
             $table->longText('description')->nullable();
             $table->boolean('status')->default(0);
+
             $table->unsignedBigInteger('cat_id')->unsigned();
             $table->foreign('cat_id')->references('id')
                 ->on('categories')

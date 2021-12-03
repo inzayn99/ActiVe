@@ -2,6 +2,7 @@
 
 namespace App\Models\SubCategory;
 
+use App\Models\AdminUser\AdminUser;
 use Illuminate\Database\Eloquent\Model;
 
 class SubCategory extends Model
@@ -16,4 +17,9 @@ class SubCategory extends Model
         'cat_id',
         'posted_by'
     ];
+
+    public function postedBy()
+    {
+        return $this->belongsTo(AdminUser::class, 'posted_by', 'id');
+    }
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category\Category;
+use App\Models\SubCategory\SubCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -23,6 +24,7 @@ class CategoryController extends BackendController
 
     }
 
+//------Add data------//
     public function add(Request $request)
     {
 
@@ -41,14 +43,33 @@ class CategoryController extends BackendController
             if ($catObj->save()) {
                 return redirect()->route('category')->with('success', 'Data was successfully inserted');
             }
+        }
+    }
+
+//---------------Category Data delete--------------//
+    public function delete(Request $request)
+    {
+        $id = $request->criteria;
+        $totalSubCat = SubCategory::where('cat_id', '=', $id)->count();
+        if ($totalSubCat > 0) {
+            return redirect()->back()->with('error', "can't delete this data belong to another table");
+
+
+        } else {
+            if (Category::findOrFail($id)->delete()) {
+                return redirect()->back()->with('succes', 'Data was successfully Deleted');
+            }
 
         }
     }
 
-    public function edit($id)
+//---------------Category Data delete--------------//
+
+    public function edit(Request $request)
     {
-        $categoryData = Category::findOrFail($id);
-        $this->data('categoryData', $categoryData);
-        return view($this->pagePath . '.category.edit-category', $this->data);
+        $id=$request->criteria;
+        $catData=Category::findOrFail($id);
+        dd($catData);
     }
+
 }

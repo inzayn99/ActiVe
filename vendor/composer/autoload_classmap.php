@@ -29,6 +29,7 @@ return array(
     'App\\Models\\Category\\Category' => $baseDir . '/app/Models/Category/Category.php',
     'App\\Models\\SubCategory\\SubCategory' => $baseDir . '/app/Models/SubCategory/SubCategory.php',
     'App\\Models\\User\\User' => $baseDir . '/app/Models/User/User.php',
+    'App\\News\\news' => $baseDir . '/app/News/news.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',

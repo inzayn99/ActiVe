@@ -38,11 +38,20 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="">
-                    <i class="ti-shift-right-alt menu-icon"></i>
-                    <span class="menu-title">Trending slider </span>
+                <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                    <i class="icon-head menu-icon"></i>
+                    <span class="menu-title">News</span>
+                    <i class="menu-arrow"></i>
                 </a>
+                <div class="collapse" id="auth">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> <a class="nav-link" href="">add news </a></li>
+                        <li class="nav-item"> <a class="nav-link" href=""> Show news </a></li>
+                    </ul>
+                </div>
             </li>
+
+
             <li class="nav-item">
                 <a class="nav-link" href="">
                     <i class="ti-receipt menu-icon"></i>

@@ -11,9 +11,11 @@ class Category extends Model
     protected $fillable = [
         'cat_name',
         'slug',
+        'date',
         'meta_keywords',
         'meta_description',
         'description',
+        'summary',
         'status',
         'posted_by'
     ];

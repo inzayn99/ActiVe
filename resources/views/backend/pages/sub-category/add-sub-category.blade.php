@@ -36,7 +36,7 @@
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="font-weight-light d-block"><i class="ti-user"></i> UPDATE CATEGORY
+                            <h4 class="font-weight-light d-block"><i class="ti-user"></i> ADD CATEGORY
 
 
                                 <a href="{{route('category')}}">
@@ -48,41 +48,42 @@
 
                                 <p class="card-description">
                                 @include('backend.layouts.message')
-                                <form action="{{route('edit-category-action')}}" method="post" enctype="multipart/form-data">
+                                <form action="" method="post" enctype="multipart/form-data">
                                     {{csrf_field()}}
-                                    <input type="hidden" name="criteria" value="{{$categoryData->id}}">
 
                                     <div class="form-group">
                                         <label for="title"><a style="color: red;">{{$errors->first('cat_name')}}</a></label>
-                                        <input type="text" name="cat_name" value="{{$categoryData->cat_name}}"                                                id="title"
-                                               class="form-control">
+                                        <input type="text" name="cat_name" value="{{old('cat_name')}}" id="title"
+                                               class="form-control" placeholder="Category Name">
                                     </div>
+
                                     <div class="form-group">
                                         <label for="slug"><a style="color: red;">{{$errors->first('slug')}}</a></label>
-                                        <input type="text" name="slug" value="{{$categoryData->slug}}" id="slug"
-                                               class="form-control">
+                                        <input type="text" name="slug" value="{{old('slug')}}" id="slug"
+                                               class="form-control" placeholder="Slug">
                                     </div>
                                     <br>
 
                                     <div class="form-group">
                                         <label for="meta_keywords">Meta keywords</label>
-                                        <input type="text" name="meta_keywords" value="{{$categoryData->meta_keywords}}" id="meta_keywords"
-                                                data-role="tagsinput">
+                                        <input type="text" name="meta_keywords" id="meta_keywords" data-role="tagsinput"
+                                               value="Trending,Advanture">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="meta_description"></label>
-                                        <textarea name="meta_description" id="meta_description" value="{{$categoryData->meta_description}}" class="form-control"></textarea>
+                                        <textarea name="meta_description" id="meta_description" class="form-control"
+                                                  placeholder="Meta Description"></textarea>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="description"></label>
-                                        <textarea name="description" id="description" class="form-control" value="{{$categoryData->description}}"></textarea>
+                                        <textarea name="description" id="description" class="form-control"></textarea>
                                     </div>
                                     <br>
 
                                     <div class="form-group">
-                                        <button class="btn btn-primary mr-2">Update category</button>
+                                        <button class="btn btn-primary mr-2">Add Record</button>
                                     </div>
                                 </form>
 

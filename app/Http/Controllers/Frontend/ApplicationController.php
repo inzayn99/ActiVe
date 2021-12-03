@@ -13,7 +13,9 @@ class ApplicationController extends FrontendController
     {
 
 
-        $this->data('categoryData',Category::all());
+        $this->data('categoryData', Category::all());
+
+
         $this->data('title', $this->makeTitle('home'));
         return view($this->pagePath . '.Home.home', $this->data);
     }
@@ -38,22 +40,23 @@ class ApplicationController extends FrontendController
 
             $username = $request->username;
             $password = $request->password;
-            if (Auth::guard('web')->attempt(['username'=>$username,'password'=>$password])){
+            if (Auth::guard('web')->attempt(['username' => $username, 'password' => $password])) {
                 return redirect()->intended(route('users'));
-            }else{
-                return redirect()->back()->with('error','Username & password not match');
+            } else {
+                return redirect()->back()->with('error', 'Username & password not match');
             }
         }
     }
 
 
-public function user(Request $request)
-{
-    return view($this->frontendPath . 'users.index',$this->data);
-}
+    public function user(Request $request)
+    {
+        return view($this->frontendPath . 'users.index', $this->data);
+    }
 
-public function logout(){
+    public function logout()
+    {
         Auth::guard('web')->logout();
         return redirect()->intended(route('login'));
-}
+    }
 }

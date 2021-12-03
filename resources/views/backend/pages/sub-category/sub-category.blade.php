@@ -33,11 +33,11 @@
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="font-weight-light d-block"><i class="ti-user"></i> SHOW CATEGORY
+                            <h4 class="font-weight-light d-block"><i class="ti-user"></i> SHOW SUB CATEGORY
 
 
                                 <a href="{{route('add-category')}}">
-                                    <button class="btn btn-outline-primary btn-sm">Add new category
+                                    <button class="btn btn-outline-primary btn-sm">Add new SUBcategory
                                         {{--                                    <span class="d-inline-block text-left">Add new user</span>--}}
                                     </button>
                                 </a>
@@ -59,41 +59,23 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($categoryData as $key=>$category)
+                                        @foreach($subCategoryData as $key=>$subCategory)
                                             <tr>
                                                 <td>{{++$key}}</td>
-                                                <td>{{$category->cat_name}}</td>
+                                                <td>{{$subCategory->sub_cat_name}}</td>
 
-                                                <td>
-                                                    <form action="{{route('update-category-status')}}" method="post">
-                                                        {{csrf_field()}}
-                                                        <input type="hidden" name="criteria" value="{{$category->id}}">
-                                                        @if($category->status==1)
-                                                            <button name="super_admin" title="Super admin"
-                                                                    class="btn btn-success btn-sm">
-                                                                Super
-                                                                admin
-                                                            </button>
-                                                        @else
-                                                            <button name="admin" title="Admin"
-                                                                    class="btn btn-primary btn-sm">admin
-                                                            </button>
-                                                        @endif
-                                                    </form>
 
                                                 </td>
-                                                <td>{{$category->postedBy->username}}</td>
-                                                <td>{{$category->created_at->diffForHumans()}}</td>
-
-
-
+                                                <td>{{$subCategory->postedBy->username}}</td>
+                                                <td>{{$subCategory->created_at->diffForHumans()}}</td>
 
 
                                                 <td>
-                                                    <a href="{{route('edit-category').'/'.$category->id}}" class="btn btn-warning btn-xs">Edit</a>
 
+                                                    <a href="{{route('edit-category').'/'.$subCategory->id}}" class="btn btn-warning btn-xs">Edit</a>
 
-                                                    <a href="{{route('delete-category').'/'.$category->id}}" class="btn btn-danger btn-xs">Delete</a>
+                                                    <a href="{{route('delete-category').'/'.$subCategory->id}}" class="btn btn-danger btn-xs">Delete</a>
+
                                                 </td>
                                             </tr>
                                         @endforeach

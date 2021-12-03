@@ -495,6 +495,7 @@ class ComposerStaticInit78482e8467ffcf62bc70431540990a78
         'App\\Models\\Category\\Category' => __DIR__ . '/../..' . '/app/Models/Category/Category.php',
         'App\\Models\\SubCategory\\SubCategory' => __DIR__ . '/../..' . '/app/Models/SubCategory/SubCategory.php',
         'App\\Models\\User\\User' => __DIR__ . '/../..' . '/app/Models/User/User.php',
+        'App\\News\\news' => __DIR__ . '/../..' . '/app/News/news.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
