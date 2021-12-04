@@ -37,19 +37,21 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+           <li class="nav-item">
                 <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                     <i class="icon-head menu-icon"></i>
-                    <span class="menu-title">News</span>
+                    <span class="menu-title">Sub Category</span>
                     <i class="menu-arrow"></i>
                 </a>
                 <div class="collapse" id="auth">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"> <a class="nav-link" href="">add news </a></li>
-                        <li class="nav-item"> <a class="nav-link" href=""> Show news </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{route('add-sub-category')}}"> Add SubCategory </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{route('sub-category')}}"> Show SubCategory </a></li>
                     </ul>
                 </div>
             </li>
+
+
 
 
             <li class="nav-item">

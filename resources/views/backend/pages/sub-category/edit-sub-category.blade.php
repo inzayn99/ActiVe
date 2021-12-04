@@ -36,7 +36,7 @@
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="font-weight-light d-block"><i class="ti-user"></i> ADD SUB CATEGORY
+                            <h4 class="font-weight-light d-block"><i class="ti-user"></i> UPDATE SUB CATEGORY
 
 
                                 <a href="{{route('category')}}">
@@ -48,58 +48,41 @@
 
                                 <p class="card-description">
                                 @include('backend.layouts.message')
-                                <form action="{{route('add-sub-category')}}" method="post"
-                                      enctype="multipart/form-data">
-                                    @csrf
-
-                                    {{--                                        <div class="form-group">--}}
-                                    {{--                                            <select name="cat_id" id="cat_id" class="form-control">--}}
-                                    {{--                                                @foreach($categoryData as $category)--}}
-                                    {{--                                                    <option value="{{$category->id}}">{{$category->cat_name}}</option>--}}
-                                    {{--                                                @endforeach--}}
-                                    {{--                                            </select>--}}
-                                    {{--                                        </div>--}}
-
+                                <form action="{{route('edit-sub-category-action')}}" method="post" enctype="multipart/form-data">
+                                    {{csrf_field()}}
+                                    <input type="hidden" name="criteria" value="{{$subCategoryData->id}}">
 
                                     <div class="form-group">
-                                        <select name="cat_id" id="cat_id" class="form-control">
-                                            <option value="">Category</option>
-                                        </select>
+                                        <label for="title"><a style="color: red;">{{$errors->first('cat_name')}}</a></label>
+                                        <input type="text" name="cat_name" value="{{$subCategoryData->sub_cat_name}}"                                                id="title"
+                                               class="form-control">
                                     </div>
-
-                                    <div class="form-group">
-                                        <label for="title"><a style="color: red;">{{$errors->first('sub_cat_name')}}</a></label>
-                                        <input type="text" name="sub_cat_name" value="{{old('sub_cat_name')}}"
-                                               id="title" class="form-control" placeholder="Sub Category Name">
-                                    </div>
-
                                     <div class="form-group">
                                         <label for="slug"><a style="color: red;">{{$errors->first('slug')}}</a></label>
-                                        <input type="text" name="slug" value="{{old('slug')}}" id="slug"
-                                               class="form-control" placeholder="Slug">
+                                        <input type="text" name="slug" value="{{$subCategoryData->slug}}" id="slug"
+                                               class="form-control">
                                     </div>
                                     <br>
 
                                     <div class="form-group">
                                         <label for="meta_keywords">Meta keywords</label>
-                                        <input type="text" name="meta_keywords" id="meta_keywords" data-role="tagsinput"
-                                               value="Trending,Advanture">
+                                        <input type="text" name="meta_keywords" value="{{$subCategoryData->meta_keywords}}" id="meta_keywords"
+                                               data-role="tagsinput">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="meta_description"></label>
-                                        <textarea name="meta_description" id="meta_description" class="form-control"
-                                                  placeholder="Meta Description"></textarea>
+                                        <textarea name="meta_description" id="meta_description" value="{{$subCategoryData->meta_description}}" class="form-control"></textarea>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="description"></label>
-                                        <textarea name="description" id="description" class="form-control"></textarea>
+                                        <textarea name="description" id="description" class="form-control" value="{{$subCategoryData->description}}"></textarea>
                                     </div>
                                     <br>
 
                                     <div class="form-group">
-                                        <button class="btn btn-primary mr-2">Add Sub Category</button>
+                                        <button class="btn btn-primary mr-2">Update sub category</button>
                                     </div>
                                 </form>
 
