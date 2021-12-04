@@ -39,11 +39,6 @@
                             <h4 class="font-weight-light d-block"><i class="ti-user"></i> ADD CATEGORY
 
 
-                                <a href="{{route('category')}}">
-                                    <button class="btn btn-outline-primary btn-sm">Add new category
-                                        {{--                                    <span class="d-inline-block text-left">Add new user</span>--}}
-                                    </button>
-                                </a>
 
 
                                                                 <p class="card-description">

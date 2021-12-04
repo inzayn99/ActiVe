@@ -102,7 +102,7 @@ class SubCategoryController extends BackendController
     {
         $id = $request->criteria;
         if (SubCategory::findOrFail($id)->delete()) {
-            echo "Delete";
+//            echo "Delete";
             return redirect()->route("sub-category")->with('success', "Data Deleted Successfully");
         }
     }

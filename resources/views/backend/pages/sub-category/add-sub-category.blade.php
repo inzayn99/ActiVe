@@ -1,3 +1,4 @@
+
 @extends('backend.master.master')
 @section('content')
 
@@ -13,37 +14,12 @@
     <div class="main-panel">
         <div class="content-wrapper">
             <div class="row">
-                {{------------search-------------}}
-                <div class="col-md-12">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <input type="text" name="search_category" class="form-control"
-                                       placeholder="type something">
-                            </div>
-                            <div class="col-md-2">
-                                <button class="btn btn-outline-secondary btn-rounded btn-icon"><i class="ti-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <br>
 
-
-                    </form>
-                </div>
-                <br><br><br>
-                {{------------------end search--}}
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="font-weight-light d-block"><i class="ti-user"></i> ADD SUB CATEGORY
 
-
-                                <a href="{{route('category')}}">
-                                    <button class="btn btn-outline-primary btn-sm">Add new sub category
-                                        {{--                                    <span class="d-inline-block text-left">Add new user</span>--}}
-                                    </button>
-                                </a>
 
 
                                 <p class="card-description">
@@ -52,20 +28,16 @@
                                       enctype="multipart/form-data">
                                     @csrf
 
-                                    {{--                                        <div class="form-group">--}}
-                                    {{--                                            <select name="cat_id" id="cat_id" class="form-control">--}}
-                                    {{--                                                @foreach($categoryData as $category)--}}
-                                    {{--                                                    <option value="{{$category->id}}">{{$category->cat_name}}</option>--}}
-                                    {{--                                                @endforeach--}}
-                                    {{--                                            </select>--}}
-                                    {{--                                        </div>--}}
-
-
                                     <div class="form-group">
                                         <select name="cat_id" id="cat_id" class="form-control">
-                                            <option value="">Category</option>
+                                            @foreach($CategoryData as $Category)
+                                                <option value="{{$Category->id}}">{{$Category->cat_name}}</option>
+                                            @endforeach
                                         </select>
                                     </div>
+
+
+
 
                                     <div class="form-group">
                                         <label for="title"><a style="color: red;">{{$errors->first('sub_cat_name')}}</a></label>

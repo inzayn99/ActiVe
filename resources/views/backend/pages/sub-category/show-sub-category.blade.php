@@ -20,9 +20,7 @@
                             <div class="col-md-4">
                                 <input type="text" name="search_category" class="form-control" placeholder="type something">
                             </div>
-                            <div class="col-md-2">
-                                <button class="btn btn-outline-secondary btn-rounded btn-icon"><i class="ti-search"></i></button>
-                            </div>
+
                         </div>
 
 
@@ -36,8 +34,8 @@
                             <h4 class="font-weight-light d-block"><i class="ti-user"></i> SHOW SUB CATEGORY
 
 
-                                <a href="{{route('add-category')}}">
-                                    <button class="btn btn-outline-primary btn-sm">Add new SUBcategory
+                                <a href="{{route('add-sub-category')}}">
+                                    <button class="btn btn-outline-primary btn-sm">Add new Sub category
                                         {{--                                    <span class="d-inline-block text-left">Add new user</span>--}}
                                     </button>
                                 </a>
@@ -72,9 +70,9 @@
 
                                                 <td>
 
-                                                    <a href="{{route('edit-category').'/'.$subCategory->id}}" class="btn btn-warning btn-xs">Edit</a>
+                                                    <a href="{{route('edit-sub-category').'/'.$subCategory->id}}" class="btn btn-warning btn-xs">Edit</a>
 
-                                                    <a href="{{route('delete-category').'/'.$subCategory->id}}" class="btn btn-danger btn-xs">Delete</a>
+                                                    <a href="{{route('delete-sub-category').'/'.$subCategory->id}}" class="btn btn-danger btn-xs">Delete</a>
 
                                                 </td>
                                             </tr>
