@@ -25,8 +25,8 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-                    <i class="icon-head menu-icon"></i>
-                    <span class="menu-title">Category</span>
+                    <i class="ti-more-alt menu-icon"></i>
+                    <span class="menu-title"> Category</span>
                     <i class="menu-arrow"></i>
                 </a>
                 <div class="collapse" id="auth">
@@ -39,7 +39,7 @@
 
            <li class="nav-item">
                 <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-                    <i class="icon-head menu-icon"></i>
+                    <i class="ti-more menu-icon"></i>
                     <span class="menu-title">Sub Category</span>
                     <i class="menu-arrow"></i>
                 </a>
@@ -51,33 +51,37 @@
                 </div>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                    <i class="ti-control-forward menu-icon"></i>
+                    <span class="menu-title">Flash News</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="auth">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> <a class="nav-link" href="{{route('add-flash-news')}}"> Add news </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{route('flash-news')}}"> Show news </a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                    <i class="ti-control-forward menu-icon"></i>
+                    <span class="menu-title">Trending</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="auth">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> <a class="nav-link" href="{{route('add-trending')}}"> Add news </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{route('show-trending')}}"> Show news </a></li>
+                    </ul>
+                </div>
+            </li>
 
 
 
-            <li class="nav-item">
-                <a class="nav-link" href="">
-                    <i class="ti-receipt menu-icon"></i>
-                    <span class="menu-title">Trending Post </span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">
-                    <i class="ti-target menu-icon"></i>
-                    <span class="menu-title">Today Top Highlight Post</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">
-                    <i class="ti-menu-alt menu-icon"></i>
-                    <span class="menu-title">Trending Topic</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">
-                    <i class="ti-alarm-clock menu-icon"></i>
-                    <span class="menu-title">Recent Post</span>
-                </a>
-            </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="">
                     <i class="ti-view-list menu-icon"></i>

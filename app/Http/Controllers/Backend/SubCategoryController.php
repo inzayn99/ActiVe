@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\AdminUser\AdminUser;
 use App\Models\Category\Category;
 use App\Models\SubCategory\SubCategory;
 use Illuminate\Http\Request;
@@ -10,23 +11,26 @@ use Illuminate\Support\Facades\Auth;
 
 class SubCategoryController extends BackendController
 {
-//    public function index()
-//    {
-//        $this->data('subCategoryData', SubCategory::all());
-//        return view($this->pagePath . '.sub-category.sub-category', $this->data);
-//
-//
-//    }
 
 //For search and Default Display of Sub Category
     public function index(Request $request)
     {
         if (!empty($request->search_sub_category)) {
             $search = $request->search_sub_category;
+//
+            $subCategoryData=SubCategory::select('sub_categories.*','categories.cat_name')
+                ->join('categories','sub_categories.cat_id','categories.id')
+                ->where('sub_categories.sub_cat_name','LIKE','%'. $search .'%')
+                ->orwhere('categories.cat_name','LIKE','%'. $search .'%')->paginate(5);
+
+
+
+
+
             $subCategoryData = SubCategory::where('sub_cat_name', 'LIKE', '%' . $search . '%')->paginate(5);
             $this->data('subCategoryData', $subCategoryData);
             if (empty($subCategoryData->first())) {
-                return redirect()->route('category')->with('error', 'Data not found');
+                return redirect()->route('sub-category')->with('error', 'Data not found');
             } else {
                 return view($this->pagePath . '.sub-category.show-sub-category', $this->data);
             }

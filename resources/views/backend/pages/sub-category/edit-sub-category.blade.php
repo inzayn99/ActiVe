@@ -1,4 +1,5 @@
 
+
 @extends('backend.master.master')
 @section('content')
 
@@ -18,14 +19,15 @@
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="font-weight-light d-block"><i class="ti-user"></i> ADD SUB CATEGORY
+                            <h4 class="font-weight-light d-block"><i class="ti-user"></i> update SUB CATEGORY
 
 
 
                                 <p class="card-description">
                                 @include('backend.layouts.message')
-                                <form action="{{route('edit-sub-category')}}" method="post" enctype="multipart/form-data">
+                                <form action="{{route('edit-sub-category-action')}}" method="post" enctype="multipart/form-data">
                                     @csrf
+                                    <input type="hidden" name="criteria" value="{{$subCategoryData->id}}">
 
                                     <div class="form-group">
                                         <select name="cat_id" id="cat_id" class="form-control">

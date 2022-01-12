@@ -15,7 +15,13 @@ class DatabaseSeeder extends Seeder
             UserTableSeeder::class,
             AdminUserTableSeeder::class,
             CategoryTableSeeder::class,
-            SubCategoryTableSeeder::class
+            SubCategoryTableSeeder::class,
+            TrendingTableSeeder::class,
+            SponsoredNewsTableSeeder::class,
+            HighlightTableSeeder::class,
+            TrendingTopicsTableSeeder::class,
+            FooterTableSeeder::class,
+            MainPostTableSeeder::class
         ]);
     }
 }

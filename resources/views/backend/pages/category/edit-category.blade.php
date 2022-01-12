@@ -13,7 +13,7 @@
     <div class="main-panel">
         <div class="content-wrapper">
             <div class="row">
-                {{------------search-------------}}
+{{--                ----------search-------------}}
                 <div class="col-md-12">
                     <form action="">
                         <div class="row">
@@ -32,7 +32,7 @@
                     </form>
                 </div>
                 <br><br><br>
-                {{------------------end search--}}
+{{--                ----------------end search--}}
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
@@ -41,7 +41,7 @@
 
                                 <a href="{{route('category')}}">
                                     <button class="btn btn-outline-primary btn-sm">Add new category
-                                        {{--                                    <span class="d-inline-block text-left">Add new user</span>--}}
+                                                                            <span class="d-inline-block text-left">Add new user</span>
                                     </button>
                                 </a>
 
@@ -49,13 +49,13 @@
                                 <p class="card-description">
                                 @include('backend.layouts.message')
                                 <form action="{{route('edit-category-action')}}" method="post" enctype="multipart/form-data">
-                                    {{csrf_field()}}
+                                    @csrf
                                     <input type="hidden" name="criteria" value="{{$categoryData->id}}">
 
                                     <div class="form-group">
                                         <label for="title"><a style="color: red;">{{$errors->first('cat_name')}}</a></label>
-                                        <input type="text" name="cat_name" value="{{$categoryData->cat_name}}"                                                id="title"
-                                               class="form-control">
+                                        <input type="text" name="cat_name"  value="{{$categoryData->cat_name}}"                                                id="title"
+                                               id="title" class="form-control">
                                     </div>
                                     <div class="form-group">
                                         <label for="slug"><a style="color: red;">{{$errors->first('slug')}}</a></label>

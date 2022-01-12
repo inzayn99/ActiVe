@@ -31,10 +31,10 @@
                             <img src="{{url('backend/images/logo.png')}}" alt="logo">
                         </div>
                         <h4>Hello! let's get started to Dashboard</h4>
-                        <h6 class="font-weight-light">Sign in to continue.</h6>
+{{--                        <h6 class="font-weight-light">Sign in to continue.</h6>--}}
                         @include('backend.layouts.message')
-                        <form class="pt-3" action="{{route('admin-login')}}" method="post">
-                            {{csrf_field()}}
+                        <form class="pt-3"  method="post"action="{{route('admin-login')}}">
+                            @csrf
                             <div class="form-group">
                                 <input type="text" name="username" class="form-control form-control-lg" id="username" placeholder="Username">
                             </div>
