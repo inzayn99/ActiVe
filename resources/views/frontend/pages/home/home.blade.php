@@ -482,7 +482,7 @@
                                     <div class="card mb-3">
                                         <div class="row g-3">
                                             <div class="col-4">
-                                                <img class="rounded" src="{{url('frontend/assets/images/blog/4by3/thumb/01.jpg')}}" alt="">
+                                                <img class="rounded" src="{{url('frontend/assets/images/blog/4by3/thumb/04.jpg')}}" alt="">
                                             </div>
                                             <div class="col-8">
                                                 <h6><a href="post-single-2.html" class="btn-link stretched-link text-reset fw-bold">The pros and cons of business agency</a></h6>
@@ -494,7 +494,7 @@
                                     <div class="card mb-3">
                                         <div class="row g-3">
                                             <div class="col-4">
-                                                <img class="rounded" src="{{url('frontend/assets/images/blog/4by3/thumb/02.jpg')}}" alt="">
+                                                <img class="rounded" src="{{url('frontend/assets/images/blog/4by3/thumb/04.jpg')}}" alt="">
                                             </div>
                                             <div class="col-8">
                                                 <h6><a href="post-single-2.html" class="btn-link stretched-link text-reset fw-bold">5 reasons why you shouldn't startup</a></h6>
@@ -596,7 +596,7 @@
                                 <div class="card">
                                     <!-- Card img -->
                                     <div class="position-relative">
-                                        <img class="card-img" src="{{url('frontend/assets/images/blog/4by3/07.jpg')}}" alt="Card image">
+                                        <img class="card-img" src="{{url('frontend/assets/images/blog/4by3/09.jpg')}}" alt="Card image">
                                         <div class="card-img-overlay d-flex align-items-start flex-column p-3">
                                             <!-- Card overlay Top -->
                                             <div class="w-100 mb-auto d-flex justify-content-end">
@@ -619,7 +619,7 @@
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <div class="avatar avatar-xs">
-                                                            <img class="avatar-img rounded-circle" src="{{url('frontend/assets/images/avatar/07.jpg')}}" alt="avatar">
+                                                            <img class="avatar-img rounded-circle" src="{{url('frontend/assets/images/avatar/09.jpg')}}" alt="avatar">
                                                         </div>
                                                         <span class="ms-3">by <a href="index.html#" class="stretched-link text-reset btn-link">Lori</a></span>
                                                     </div>
@@ -634,7 +634,7 @@
                                 <div class="card">
                                     <!-- Card img -->
                                     <div class="position-relative">
-                                        <img class="card-img" src="{{url('frontend/assets/images/blog/4by3/08.jpg')}}" alt="Card image">
+                                        <img class="card-img" src="{{url('frontend/assets/images/blog/4by3/09.jpg')}}" alt="Card image">
                                         <div class="card-img-overlay d-flex align-items-start flex-column p-3">
                                             <!-- Card overlay bottom -->
                                             <div class="w-100 mt-auto">
@@ -698,7 +698,7 @@
                                 <div class="card">
                                     <!-- Card img -->
                                     <div class="position-relative">
-                                        <img class="card-img" src="{{url('frontend/assets/images/blog/4by3/10.jpg')}}" alt="Card image">
+                                        <img class="card-img" src="{{url('frontend/assets/images/blog/4by3/09.jpg')}}" alt="Card image">
                                         <div class="card-img-overlay d-flex align-items-start flex-column p-3">
                                             <!-- Card overlay Top -->
                                             <div class="w-100 mb-auto d-flex justify-content-end">
@@ -721,7 +721,7 @@
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <div class="avatar avatar-xs">
-                                                            <img class="avatar-img rounded-circle" src="{{url('frontend/assets/images/avatar/10.jpg')}}" alt="avatar">
+                                                            <img class="avatar-img rounded-circle" src="{{url('frontend/assets/images/avatar/09.jpg')}}" alt="avatar">
                                                         </div>
                                                         <span class="ms-3">by <a href="index.html#" class="stretched-link text-reset btn-link">Samuel</a></span>
                                                     </div>
@@ -736,7 +736,7 @@
                                 <div class="card">
                                     <!-- Card img -->
                                     <div class="position-relative">
-                                        <img class="card-img" src="{{url('frontend/assets/images/blog/4by3/11.jpg')}}" alt="Card image">
+                                        <img class="card-img" src="{{url('frontend/assets/images/blog/4by3/09.jpg')}}" alt="Card image">
                                         <div class="card-img-overlay d-flex align-items-start flex-column p-3">
                                             <!-- Card overlay bottom -->
                                             <div class="w-100 mt-auto">
@@ -752,7 +752,7 @@
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <div class="avatar avatar-xs">
-                                                            <img class="avatar-img rounded-circle" src="{{url('frontend/assets/images/avatar/12.jpg')}}" alt="avatar">
+                                                            <img class="avatar-img rounded-circle" src="{{url('frontend/assets/images/avatar/09.jpg')}}" alt="avatar">
                                                         </div>
                                                         <span class="ms-3">by <a href="index.html#" class="stretched-link text-reset btn-link">Dennis</a></span>
                                                     </div>
